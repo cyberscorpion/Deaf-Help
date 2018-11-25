@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+
+        }
+
+        /*to change the font accourding to the screen size*/
+        html {
+            font-size: 62.5%
+        }
+
+        /*media queries*/
+        @media only screen and (max-width: 37.5em) {
+            html {
+                font-size: 56.25%;
+            }
+        }
+
+        @media only screen and (max-width: 56.25em) {
+            html {
+                font-size: 50%;
+            }
+        }
+
+        @media only screen and (min-width: 112.5em) {
+            html {
+                font-size: 75%
+            }
+        }
+
+        /*body styling*/
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            padding: 3rem;
+        }
+
+        .logo img {
+            height: 4rem;
+            transform: translate(1rem, 0rem);
+        }
+
+        .header-img {
+            background-image: url(/media/assets/a.jpg);
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .heading1 {
+            font-size: 7rem;
+            top: 50vh;
+            position: absolute;
+            left: 11rem;
+            transform: translateY(-120%);
+            font-weight: 300;
+        }
+
+        .heading2 {
+            font-size: 17rem;
+            top: 50vh;
+            position: absolute;
+            left: 11rem;
+            transform: translateY(-35%);
+            font-weight: 100;
+        }
+
+
+        .heading2 span:after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 80%;
+            background-color: black;
+            top: 86%;
+            left: 30%;
+        }
+        
+        .button_predict{
+            margin: 1rem;
+            top: 73vh;
+            position: absolute;
+            left: 25rem;
+        }
+        .button_predict a{
+            
+            font-size: 2rem !important;
+        }
+
+        .section1 {
+            background-image: linear-gradient(to right, #BCBDC2 .1%, #F0F1F3 10%, #F0F1F3);
+            height: 100vh;
+        }
+
+        .section1 h2 {
+            text-align: center;
+            font-size: 4rem;
+            margin-top: 4rem;
+        }
+
+        .section1 .stat-img {
+            right: 3rem;
+            position: absolute;
+        }
+
+    </style>
+
+    <header class="header-img">
+        <div class="logo">
+            <img src="/media/assets/ear.png" alt=""> DeafHeLp
+        </div>
+        <div class="heading1">
+            Make the deaf
+        </div>
+        <div class="heading2">
+            <span>Proud</span>
+        </div>
+        <div class="button_predict">
+            <a class="btn btn-danger" href="/video">Click to predict</a>
+        </div>
+    </header>
+    <section class="section1">
+        <h2>Statastics</h2>
+        <img class="stat-img" src="/media/assets/stat.jpg" alt="">
+    </section>
+
+</body>
+
+</html>
