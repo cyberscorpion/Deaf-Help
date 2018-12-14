@@ -7,13 +7,9 @@ import os
 import tensorflow as tf
 from django.views.decorators.csrf import csrf_exempt
 import keras
-#import pandas as pd
-#import matplotlib.pyplot as plt
 import dlib
 from imutils import face_utils
 import imutils
-#import easydict
-#import keyboard
 from keras.models import load_model
 from django.core.files.storage import FileSystemStorage
 
@@ -138,8 +134,7 @@ def face_detection(request):
 #        ret,frame=cap.read()
         
         #print(ret)
-        
-    print("eee")
+
     images_size=len(images_array)
     if images_size<=10:
         images_array=np.append(images_array,empty_distance(10-images_size)).reshape(10,20)
@@ -154,20 +149,7 @@ def face_detection(request):
         model2=load_model('/home/rajat/Desktop/monor lip reading/face-detection-opencv-api/face_detector/minor2.h5')
         print(model2.predict_classes(images_array[None]))
         xx=model2.predict_classes(images_array[None])
-    
-    
-#    count =0 
-#    print(success)
-#    while success:
-#        print("dd")
-#        count+=1
-        
-#    if request.method == "POST":
-            
-#        if request.FILES.get("image", None) is not None:
-#            vidcap=cv2.VideoCapture(request.FILES["image"])
-           
-#            image_to_read = read_image(stream = request.FILES["image"])
+
 
     keywords=[ 'Begin', 'Choose', 'Connection', 'Navigation', 'Next', 'Previous', 'Start', 'Stop', 'Hello', 'Web',
     ]
